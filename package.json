@@ -1,0 +1,25 @@
+{
+  "name": "phishing-detector",
+  "version": "1.0.0",
+  "description": "CSGS Hackathon - Spring 2026 Project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crimsonal/phishing-detector.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/crimsonal/phishing-detector/issues"
+  },
+  "homepage": "https://github.com/crimsonal/phishing-detector#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
