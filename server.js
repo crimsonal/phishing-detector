@@ -1,12 +1,15 @@
-import express from "express";
-const app = express()
-const port = 3000
+import app from "./app.js";
+import express from "express"
+import analyzeLink from "./controllers/v1/analyze.controller.js";
+const PORT = process.env.PORT || 3000
 
+const router = express.Router();
 
-app.get('/', (req, res) => {
-  res.send('Hello World!');
-});
+app.post("/url", analyzeLink)
 
-app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}/`);
+app.get("/", (req, res) => {
+    res.send(".")
+})
+app.listen(PORT, () => {
+  console.log(`Server listening on port http://localhost:${PORT}/`);
 });
