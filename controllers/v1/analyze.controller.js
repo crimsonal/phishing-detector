@@ -5,10 +5,14 @@ async function analyzeLink(req, res, next) {
 
         const { url } = req.body
         
-        const result = analyzeUrl(url)
+        if (!url) {
+            return res.status(400).json({ error: "url is required in request body" });
+        }
+
+        const result = await analyzeUrl(url)
         console.log("result is" ,result)
         res.status(200).json({
-            result: result
+           result
         })
     } catch (err) {
         next(err)
