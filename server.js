@@ -1,9 +1,8 @@
+import "dotenv/config";
 import app from "./app.js";
-import express from "express"
 import analyzeLink from "./controllers/v1/analyze.controller.js";
-const PORT = process.env.PORT || 3000
 
-const router = express.Router();
+const PORT = process.env.PORT || 3000;
 
 app.post("/url", analyzeLink)
 
