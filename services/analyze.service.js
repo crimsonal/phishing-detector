@@ -16,7 +16,7 @@ const SUSPICIOUS_KEYWORDS = [
 const URGENCY_PHRASES = [
     "act now", "verify your account", "suspended", "unusual activity",
     "confirm your identity", "click here immediately", "your account will be closed",
-    "update your information", "unauthorized access", "limited time"
+    "update your information", "unauthorized access", "limited time", "photos and vieos will be deleted"
 ];
 
 const SUSPICIOUS_TLDS = [".xyz", ".tk", ".top", ".gq", ".cf", ".ml"];
